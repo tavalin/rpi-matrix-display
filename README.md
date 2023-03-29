@@ -18,8 +18,8 @@ A Spotify display for 64x64 RGB LED matrices
 3. **Set your Client ID and Secret ID in the config.ini**
 4. Update git submodules:
    - `git submodule update --init --recursive`
-5. Install emulator dependencies (if not wanting to run emulated, you can skip this step):
-   - `pip install RGBMatrixEmulator`
+5. Install dependencies
+   - `pip install -r requirements.txt`
 6. Run the app ([see below](#how-to-run))
    - More dependencies may need to be installed via pip depending on your machine
 7. Authorize Spotify

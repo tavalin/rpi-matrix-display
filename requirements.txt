@@ -1,0 +1,6 @@
+RGBMatrixEmulator
+Pillow
+numpy
+requests
+spotipy
+rgbmatrix
