@@ -1,4 +1,4 @@
-# rpi-spotify-matrix-display
+# rpi-matrix-display
 
 A Spotify display for 64x64 RGB LED matrices
 
