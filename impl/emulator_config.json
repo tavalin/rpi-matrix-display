@@ -1,12 +1,12 @@
 {
-    "pixel_size": 8,
-    "pixel_style": "square",
-    "display_adapter": "pygame",
+    "pixel_size": 2,
+    "pixel_style": "circle",
+    "display_adapter": "browser",
     "suppress_font_warnings": false,
     "browser": {
         "_comment": "For use with the \"browser\" adapter only.",
-        "port": 8888,
-        "target_fps": 24,
+        "port": 8889,
+        "target_fps": 120,
         "fps_display": false,
         "quality": 70,
         "image_border": true,

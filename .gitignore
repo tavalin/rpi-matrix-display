@@ -4,3 +4,5 @@ lib
 bin
 rpi-rgb-led-matrix
 impl/.cache
+.idea/
+config.ini
