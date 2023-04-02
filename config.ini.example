@@ -1,0 +1,18 @@
+[Matrix]
+hardware_mapping = regular
+brightness = 100
+gpio_slowdown = 4
+limit_refresh_rate_hz = 100
+shutdown_delay = 30
+canvas_width = 128
+canvas_height = 64
+chain_length = 2
+pixel_mapper_config = V-mapper
+parallel = 1
+
+
+[Spotify]
+client_id = <client_id>
+client_secret = <client_secret>
+redirect_uri = http://localhost:8080/callback
+; device_whitelist = ['Marantz AVR', 'Samsung TV']
