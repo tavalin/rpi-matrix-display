@@ -13,11 +13,11 @@ current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentfra
 sys.path.append(current_dir + "\rpi-rgb-led-matrix\bindings\python")
 
 
-# from rgbmatrix import RGBMatrix, RGBMatrixOptions
-from RGBMatrixEmulator import RGBMatrix, RGBMatrixOptions
+#from rgbmatrix import RGBMatrix, RGBMatrixOptions
+#from RGBMatrixEmulator import RGBMatrix, RGBMatrixOptions
 
-from impl import controller
-from impl.controller import Controller
+#from impl import controller
+from controller import Controller
 
 controller = None
 
@@ -58,18 +58,6 @@ def previous_image():
 
 
 def main():
-    # read in configuration and set up the controller
-    # get arguments
-    # parser = argparse.ArgumentParser(
-    #    prog='rpi-matrix-display',
-    #    description='Displays various dashboards an HUB75 LED matrix')
-
-    # parser.add_argument('-f', '--fullscreen', action='store_true', help='Always display album art in fullscreen')
-    # parser.add_argument('-e', '--emulated', action='store_true', help='Use a matrix emulator if you do not have this '
-    #                                                                  'device connected to a real HUB75 LED matrix')
-    # args = parser.parse_args()
-    # is_emulated = args.emulated
-
     config = configparser.ConfigParser()
     parsed_configs = config.read('../config.ini')
     if len(parsed_configs) == 0:

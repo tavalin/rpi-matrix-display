@@ -2,18 +2,21 @@ import os, math, time, spotipy
 from queue import LifoQueue
 
 class SpotifyModule:
+
+    SPOTIFY_CONFIG_HEADER: str = "Spotify"
+
     def __init__(self, config):
         self.invalid = False
         self.calls = 0
         self.queue = LifoQueue()
         self.config = config
         
-        if config is not None and 'Spotify' in config and 'client_id' in config['Spotify'] \
-            and 'client_secret' in config['Spotify'] and 'redirect_uri' in config['Spotify']:
+        if config is not None and SpotifyModule.SPOTIFY_CONFIG_HEADER in config and 'client_id' in config[SpotifyModule.SPOTIFY_CONFIG_HEADER] \
+            and 'client_secret' in config[SpotifyModule.SPOTIFY_CONFIG_HEADER] and 'redirect_uri' in config[SpotifyModule.SPOTIFY_CONFIG_HEADER]:
             
-            client_id = config['Spotify']['client_id']
-            client_secret = config['Spotify']['client_secret']
-            redirect_uri = config['Spotify']['redirect_uri']
+            client_id = config[SpotifyModule.SPOTIFY_CONFIG_HEADER]['client_id']
+            client_secret = config[SpotifyModule.SPOTIFY_CONFIG_HEADER]['client_secret']
+            redirect_uri = config[SpotifyModule.SPOTIFY_CONFIG_HEADER]['redirect_uri']
             if client_id != "" and client_secret != "" and redirect_uri != "":
                 try:
                     os.environ["SPOTIPY_CLIENT_ID"] = client_id

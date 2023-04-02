@@ -5,3 +5,4 @@ requests
 spotipy
 rgbmatrix
 flask
+pause
