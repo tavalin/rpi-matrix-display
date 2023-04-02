@@ -15,7 +15,7 @@ A Spotify display for 64x64 RGB LED matrices
 1. Clone the repo
 2. Enter the directory:
    - `cd rpi-matrix-display/`
-3. **Create your config.ini based on config.ini.example**
+3. Create your config.ini based on config.ini.example
 4. Update git submodules:
    - `git submodule update --init --recursive`
 5. Install dependencies
