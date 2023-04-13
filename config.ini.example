@@ -9,7 +9,7 @@ canvas_height = 64
 chain_length = 2
 pixel_mapper_config = V-mapper
 parallel = 1
-
+row-addr-type=3
 
 [Spotify]
 client_id = <client_id>

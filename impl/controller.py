@@ -48,11 +48,14 @@ class Controller:
         options.drop_privileges = config.get(
             Controller.MATRIX_CONFIG_HEADER, 'drop_privileges', fallback=False)
         options.pixel_mapper_config = config.get(
-            Controller.MATRIX_CONFIG_HEADER, 'pixel_mapper_config', fallback='V-mapper')
+            Controller.MATRIX_CONFIG_HEADER, 'pixel_mapper', fallback='V-mapper')
         options.parallel = config.getint(
             Controller.MATRIX_CONFIG_HEADER, 'parallel', fallback=1)
         options.chain_length = config.getint(
             Controller.MATRIX_CONFIG_HEADER, 'chain_length', fallback=1)
+        options.row_address_type = config.getint(
+            Controller.MATRIX_CONFIG_HEADER, 'row_addr_type', fallback=1)
+         
         emulated = config.get(Controller.MATRIX_CONFIG_HEADER,
                               'is_emulated', fallback=False)
 
